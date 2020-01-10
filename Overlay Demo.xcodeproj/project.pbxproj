@@ -15,6 +15,11 @@
 		9B6E2E5423C91375007F9524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E2E5223C91375007F9524 /* LaunchScreen.storyboard */; };
 		9B6E2E5F23C91375007F9524 /* Overlay_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E2E5E23C91375007F9524 /* Overlay_DemoTests.swift */; };
 		9B6E2E6A23C91375007F9524 /* Overlay_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E2E6923C91375007F9524 /* Overlay_DemoUITests.swift */; };
+		9B6E2E7A23C91509007F9524 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E2E7923C91509007F9524 /* Places.plist */; };
+		9B6E2E7C23C915BC007F9524 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E2E7B23C915BC007F9524 /* Place.swift */; };
+		9B6E2E8123C916F2007F9524 /* ic_place.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E2E7D23C916F2007F9524 /* ic_place.png */; };
+		9B6E2E8223C916F2007F9524 /* ic_place_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E2E7E23C916F2007F9524 /* ic_place_2x.png */; };
+		9B6E2E8323C916F2007F9524 /* ic_place_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E2E7F23C916F2007F9524 /* ic_place_3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		9B6E2E6523C91375007F9524 /* Overlay DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overlay DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6E2E6923C91375007F9524 /* Overlay_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay_DemoUITests.swift; sourceTree = "<group>"; };
 		9B6E2E6B23C91375007F9524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6E2E7923C91509007F9524 /* Places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		9B6E2E7B23C915BC007F9524 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		9B6E2E7D23C916F2007F9524 /* ic_place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place.png; sourceTree = "<group>"; };
+		9B6E2E7E23C916F2007F9524 /* ic_place_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place_2x.png; sourceTree = "<group>"; };
+		9B6E2E7F23C916F2007F9524 /* ic_place_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place_3x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +114,13 @@
 				9B6E2E4B23C91374007F9524 /* ViewController.swift */,
 				9B6E2E4D23C91374007F9524 /* Main.storyboard */,
 				9B6E2E5023C91375007F9524 /* Assets.xcassets */,
+				9B6E2E7E23C916F2007F9524 /* ic_place_2x.png */,
+				9B6E2E7D23C916F2007F9524 /* ic_place.png */,
+				9B6E2E7F23C916F2007F9524 /* ic_place_3x.png */,
 				9B6E2E5223C91375007F9524 /* LaunchScreen.storyboard */,
 				9B6E2E5523C91375007F9524 /* Info.plist */,
+				9B6E2E7923C91509007F9524 /* Places.plist */,
+				9B6E2E7B23C915BC007F9524 /* Place.swift */,
 			);
 			path = "Overlay Demo";
 			sourceTree = "<group>";
@@ -233,8 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6E2E5423C91375007F9524 /* LaunchScreen.storyboard in Resources */,
+				9B6E2E7A23C91509007F9524 /* Places.plist in Resources */,
 				9B6E2E5123C91375007F9524 /* Assets.xcassets in Resources */,
+				9B6E2E8223C916F2007F9524 /* ic_place_2x.png in Resources */,
+				9B6E2E8323C916F2007F9524 /* ic_place_3x.png in Resources */,
 				9B6E2E4F23C91374007F9524 /* Main.storyboard in Resources */,
+				9B6E2E8123C916F2007F9524 /* ic_place.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +281,7 @@
 				9B6E2E4C23C91374007F9524 /* ViewController.swift in Sources */,
 				9B6E2E4823C91374007F9524 /* AppDelegate.swift in Sources */,
 				9B6E2E4A23C91374007F9524 /* SceneDelegate.swift in Sources */,
+				9B6E2E7C23C915BC007F9524 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
