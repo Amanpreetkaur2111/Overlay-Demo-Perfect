@@ -26,7 +26,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         
         addAnnotations()
-        addPolyLine()
+        //addPolyLine()
           polygon()
         
     }
@@ -68,6 +68,8 @@ extension ViewController: MKMapViewDelegate {
         }  else {  let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
             
             annotationView.image = UIImage(named: "ic_place_2x")
+            annotationView.canShowCallout = true
+            annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             
             return annotationView
             
@@ -103,5 +105,18 @@ extension ViewController: MKMapViewDelegate {
         
     return MKOverlayRenderer()
 }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation as? Place, let title = annotation.title else {
+            return
+        }
+        
+        let alertController = UIAlertController(title: "Welcome to \(title)", message: "Have a Good Time in \(title)", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        present(alertController,animated: true,completion: nil)
+        
+        
+    }
 
 }
